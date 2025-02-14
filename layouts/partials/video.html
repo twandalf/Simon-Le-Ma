@@ -1,0 +1,35 @@
+<div class="image split-video">
+  <!-- YouTube Video -->
+  {{ $youtubeId := .Params.visual.video.youtubeId | default
+  .Site.Params.visual.video.youtubeId }} {{ $videoFile :=
+  .Params.visual.video.file | default .Site.Params.visual.video.file }} {{ $mute
+  := .Params.visual.video.mute | default .Site.Params.visual.video.mute }} {{ if
+  $youtubeId }}
+  <div class="video-wrap">
+    <div class="video-container">
+      <iframe
+        class="video-content"
+        src="https://www.youtube.com/embed/{{ $youtubeId }}?rel=0&amp;controls=0&amp;showinfo=0&amp;loop=1&amp;playlist={{ $youtubeId }}&amp;autoplay=1{{ if $mute }}&amp;mute=1{{ end }}"
+        frameborder="0"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Self-Hosted Video -->
+  {{ else if $videoFile }}
+  <video
+    class="video"
+    src="{{ $videoFile }}"
+    loop
+    autoplay{{
+    if
+    $mute
+    }}
+    muted{{
+    end
+    }}
+  ></video>
+  {{ end }}
+</div>

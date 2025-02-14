@@ -1,0 +1,114 @@
+# Site settings
+baseURL = "https://example.com"
+languageCode = "en-US"
+title = "Simon Le Ma"
+theme = "hugo-split-theme"
+disableKinds = ["section", "taxonomy", "RSS", "sitemap"]
+disableHugoGeneratorInject = true
+
+# Local preview mode
+relativeURLs = true
+uglyURLs = true
+
+# Copyright
+copyright = "&copy;2024 Your Name"
+
+[services]
+  [services.googleAnalytics]
+    # Enter your tracking code to enable Google Analytics
+    ID = ""
+
+[params]
+
+  # Metadata for search engines and social sharing
+  author = "Simon Martens"
+  description = "Simon Martens vertaalt emoties naar meeslepende muziek. Hij verweeft introspectieve verhalen met groovy funk, alternatieve pop en jazz. Zijn conceptalbums zijn als een treinreis door herinneringen—soms denderend, soms aarzelend, maar altijd oprecht. Een soundtrack voor het hart en hoofd."
+  shareImage = "images/sharepic.png"
+  twitterHandle = "https://www.instagram.com/simonlema_music/"
+
+  # Favicon
+  favicon = "favicontrein.ico"
+
+  # Section - Visual
+  [params.visual]
+
+    # Image
+    [params.visual.image]
+      enable = false
+      # file = "images/CROPPERDECROP Simon Le Ma.jpg"
+      # position = "center center"
+
+    # Video
+    [params.visual.video]
+      enable = true
+      mute = true
+      # file = "videos/background.mp4"
+      youtubeId = "KbDjoL6XnPc"
+
+  # Links
+  #
+  # Links List #1
+  [[params.links]]
+    [params.links.list1]
+      heading = "Contact"
+
+      [[params.links.list1.link]]
+        text = "Email"
+        url = "mailto:simon.martens96@hotmail.com"
+        new_tab = false # Default, open at same tab
+
+      [[params.links.list1.link]]
+        text = "Tourdates"
+        url = "https://www.instagram.com/simonlema_music/"
+         new_tab = true # new tab 
+
+
+  # Links List #2
+  [[params.links]]
+    [params.links.list2]
+      heading = "Socials"
+
+      [[params.links.list2.link]]
+        text = "Instagram"
+        url = "https://www.instagram.com/simonlema_music/"
+
+      [[params.links.list2.link]]
+        text = "Facebook"
+        url = "https://www.facebook.com/profile.php?id=100095676036532"
+
+      [[params.links.list2.link]]
+        text = "Youtube"
+        url = "https://www.youtube.com/@simonlema2175"
+
+              [[params.links.list2.link]]
+     text = "Spotify"
+        url = "https://open.spotify.com/artist/5N5R8YuzgWlunNcwoFiLnE?si=_TV6g9txQH6w7-6XJLOGOg"
+
+     [[params.links.list2.link]]
+                text = "VI.BE"
+        url = "https://vi.be/platform/simonlema"
+
+  # Links List #3
+  [[params.links]]
+    [params.links.list3]
+      heading = "Albums"
+
+      [[params.links.list3.link]]
+        text = "Loyal Dog"
+        url = "/loyal-dog.html"
+
+      [[params.links.list3.link]]
+        text = "Housewarming"
+        url = "https://vi.be/platform/simonlema"
+
+[server]
+[[server.headers]]
+    for = '/**'
+    [server.headers.values]
+      Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://dummyimage.com; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com;"
+      Referrer-Policy = 'strict-origin-when-cross-origin'
+      X-Content-Type-Options = 'nosniff'
+      X-Frame-Options = 'SAMEORIGIN'
+      X-XSS-Protection = '1; mode=block'
+
+
