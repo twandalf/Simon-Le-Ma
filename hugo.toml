@@ -99,7 +99,7 @@ copyright = "&copy;2024 Your Name"
 
       [[params.links.list3.link]]
         text = "Housewarming"
-        url = "https://vi.be/platform/simonlema"
+        url = "/housewarming.html"
 
 [server]
 [[server.headers]]
