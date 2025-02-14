@@ -88,11 +88,11 @@ disableHugoGeneratorInject = true
 
       [[params.links.list3.link]]
         text = "Loyal Dog"
-        url = "/loyal-dog.html"
+        url = "/Simon-Le-Ma/loyal-dog/"
 
       [[params.links.list3.link]]
         text = "Housewarming"
-        url = "/housewarming.html"
+        url = "/Simon-Le-Ma/housewarming"
 
 [server]
 [[server.headers]]
