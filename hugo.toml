@@ -87,8 +87,8 @@ disableHugoGeneratorInject = true
       heading = "Albums"
 
       [[params.links.list3.link]]
-        text = "Loyal Dog"
-        url = "/Simon-Le-Ma/loyal-dog/"
+        text = "Train Of Thought"
+        url = "/Simon-Le-Ma/trainofthought/"
 
       [[params.links.list3.link]]
         text = "Housewarming"
