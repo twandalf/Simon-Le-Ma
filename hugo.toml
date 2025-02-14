@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "https://example.com"
+baseURL = "https://twandalf.github.io/Simon-Le-Ma/"
 languageCode = "en-US"
 title = "Simon Le Ma"
 theme = "hugo-split-theme"
