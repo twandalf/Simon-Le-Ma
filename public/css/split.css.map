@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "split.css",
-	"sourceRoot": "C:/Hugo/Simone Le Ma",
+	"sourceRoot": "C:/Hugo/Simon Le Ma",
 	"sources": [
 		"assets/scss/split.scss",
 		"assets/scss/_normalize.scss",
